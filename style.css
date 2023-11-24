@@ -2,6 +2,10 @@ body {
     background-color: darkslategray;
 }
 
+h1 {
+    color: goldenrod;
+}
+
 .wrapper {
     display: flex;
     flex-direction: column;
@@ -11,7 +15,7 @@ body {
 .container {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
     align-items: center;
 }
 
@@ -25,4 +29,18 @@ body {
     background-color: burlywood;
     font-weight: 800;
     font-size: 24px;
+    box-shadow: 2px 4px 5px rgba(0, 0, 0, 0.3);
+
+    transform: translateX(500%);
+    transition: transform 0.5s ease;
 }
+
+.box:nth-of-type(even) {
+    transform: translateX(-500%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
+
+
